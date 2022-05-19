@@ -1,0 +1,9 @@
+import web3 from "./web3";
+
+const address = "0x9D4edA811B64642A6Eb533Fab3853DbeAFbd72De";
+const abi = [{ "constant": true, "inputs": [], "name": "bankBalance", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "manager", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "userId", "type": "uint256" }], "name": "Deposit", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": false, "inputs": [{ "name": "userId", "type": "uint256" }, { "name": "amount", "type": "uint256" }], "name": "Withdraw", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "uint256" }], "name": "customers", "outputs": [{ "name": "customerAddress", "type": "address" }, { "name": "balance", "type": "uint256" }, { "name": "timeStamp", "type": "uint256" }, { "name": "fdAmount", "type": "uint256" }, { "name": "lockIn", "type": "uint256" }, { "name": "fdTimeStamp", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "userId", "type": "uint256" }], "name": "breakFD", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, {
+    "constant": false, "inputs": [{ "name": "userId", "type": "uint256" },
+    { "name": "amount", "type": "uint256" }], "name": "createFD", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function"
+}, { "inputs": [], "payable": true, "stateMutability": "payable", "type": "constructor" }]
+
+export default new web3.eth.Contract(abi, address);

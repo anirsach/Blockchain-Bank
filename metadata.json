@@ -1,0 +1,24 @@
+{
+    "description": "This NFT proves that I've deployed an ERC721 contract on Rinkeby Test network",
+    "external_url": "https://alchemy.com",
+    "image": "https://ipfs.filebase.io/ipfs/bafybeihyvhgbcov2nmvbnveunoodokme5eb42uekrqowxdennt2qyeculm",
+    "name": "Anirudh ERC721",
+    "attributes": [
+        {
+            "trait_type": "Base",
+            "value": "Starfish"
+        },
+        {
+            "trait_type": "shade",
+            "value": "Dark"
+        },
+        {
+            "trait_type": "Proof",
+            "value": "Confirmed"
+        },
+        {
+            "trait_type": "Level",
+            "value": "Beginner"
+        }
+    ]
+}
